@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+      font-family: 'Montserrat', sans-serif;
+}
+
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    padding: 50px 10%;
+    background-color: #f7f3e8;
+}
+
+.sobre img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.sobre h1 {
+    font-size: 45px;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+
+h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    background-color: #56652e;
+    color: white;
+   
+    border: none;
+    border-radius: 30px;
+
+    padding: 18px 35px;
+
+    margin-top: 20px;
+}
+
+.link{
+    color: #FFFFFF;
+    border: none;
+    text-decoration: none
+}
+
+
+/* PARTE VERDE */
+
+.verde {
+    background-color: #56652e;
+    color: white;
+
+    padding: 70px 10%;
+}
+
+.verde h2 {
+    font-size: 50px;
+}
+
+.verde p {
+    font-size: 25px;
+    color: #f7f3e8;
+}
+
+
+
+/* ------------------------ Para Celular----------------------*/
+
+@media screen and (max-width:768px){
+    .sobre {display: block;
+    padding: 25px 20px}
+
+    .sobre img{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .sobre h1{
+        font-size: 30px;
+    }
+
+    .sobre p{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .button{
+        display: inline-block;
+        padding: 15px 20px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .verde{
+        padding: 35px 20px;
+    }
+
+    .verde p{
+        font-size: 20px;
+    }
+
+    .verde h2{
+        font-size: 30px;
+    }
+}
+
