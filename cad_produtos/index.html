@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><header class="cabecalho">
+        <div class="container_cabecalho">
+            <a href="index.html" class="logo" aria-label="Pequeno Forno, página inicial">
+                <svg viewBox="284 36 112 112" aria-hidden="true">
+                    <rect x="288" y="40" width="104" height="104" rx="16" fill="none" stroke="currentColor" stroke-width="3"/>
+                    <line x1="306" y1="62" x2="374" y2="62" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M308 130 V102 a32 32 0 0 1 64 0 V130 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                    <ellipse cx="340" cy="118" rx="17" ry="9" fill="currentColor"/>
+                    <line x1="332" y1="114" x2="336" y2="122" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="340" y1="113" x2="344" y2="121" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-texto">
+                    <strong>pequeno forno</strong>
+                    <small>pães artesanais</small>
+                </span>
+            </a>
+            
+            <a href="index.html" class="voltar">
+                <i class="ti ti-arrow-left"></i> Voltar ao site
+            </a>
+        </div></header>
+
+    <main>
+
+        <section class="cad_produtos">
+
+            <div class="container cad_container">
+
+                <div class="titulo">
+
+                    <span>CADASTRO DE PRODUTOS</span>
+
+                    <h1>Adicione um novo produto</h1>
+
+                    <p>
+                        Preencha as informações abaixo para cadastrar
+                        um novo produto no seu catálogo.
+                    </p>
+
+                </div>
+
+
+                <form>
+
+                    <div class="inputs_form">
+
+                        <div class="form_coluna1">
+
+                            <div class="linha_form lf_coluna">
+
+                                <label for="nome">
+                                    Nome do produto
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    placeholder="Ex: Pão italiano"
+                                >
+
+                            </div>
+
+
+                            <div class="linha_form lf_linha">
+
+                                <div class="campo">
+
+                                    <label for="preco">
+                                        Preço
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="preco"
+                                        placeholder="Ex: 12,90"
+                                    >
+
+                                </div>
+
+
+                                <div class="campo">
+
+                                    <label for="categoria">
+                                        Categoria
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="categoria"
+                                        placeholder="Ex: Pães"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="linha_form lf_coluna">
+
+                                <label for="descricao">
+                                    Descrição
+                                </label>
+
+                                <textarea
+                                    id="descricao"
+                                    rows="5"
+                                    placeholder="Conte um pouco sobre o produto..."
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="linha_form lf_coluna">
+
+                                <label for="imagem">
+                                    Imagem do produto
+                                </label>
+
+                                <input
+                                    type="file"
+                                    id="imagem"
+                                >
+
+                            </div>
+
+
+                            <input
+                                type="button"
+                                value="Cadastrar produto"
+                            >
+
+                        </div>
+
+
+                        <div class="preview">
+
+                            <div class="imagem_preview">
+
+                                <span>Imagem</span>
+
+                                <p>
+                                    Sua foto do produto
+                                    aparecerá aqui.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container footer_container">
+
+            <span>
+                © 2026 Pão Nosso. Padaria Artesanal.
+            </span>
+
+            <div class="nav_footer">
+
+                <a href="">Instagram</a>
+
+                <a href="">Facebook</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</html>

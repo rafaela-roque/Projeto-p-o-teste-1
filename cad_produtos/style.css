@@ -1,0 +1,407 @@
+:root {
+    --texto: #2b1a12;
+    --texto-suave: #8a6854;
+    --marrom: #6b4530;
+    --creme: #f5f0e5;
+    --creme-card: #fdfae1;
+    --borda: #dfd3b6;
+    --dourado: #b77d4d;
+    --verde: #4f5e30;
+    --verde-hover: #435029;
+
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Outfit', Arial, sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 5%;
+    background-color: #4c2318;
+}
+
+.container_cabecalho{
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.logo svg{
+    width: 46px;
+    height: 46px;
+}
+
+.logo-texto small{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #cdb8a3;
+}
+
+.voltar{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color:#e6d9c3;
+    text-decoration: none;
+}
+
+/* -----------------Main------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --corFundo: #F5F0E5;
+    --corVerde: #556633;
+    --corDourado: #C49A62;
+    --corTexto: #402719;
+
+    --fontHanken: "Hanken Grotesk", sans-serif;
+    --fontCaslon: "Libre Caslon Text", serif;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ---------------- CADASTRO ---------------- */
+
+.cad_produtos{
+    background-color: var(--corFundo);
+}
+
+
+.cad_container{
+    padding: 80px 0;
+}
+
+
+/* ---------------- TITULO ---------------- */
+
+.titulo{
+    margin-bottom: 50px;
+}
+
+
+.titulo span{
+    font-family: var(--fontHanken);
+    color: var(--corDourado);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+.titulo h1{
+    font-family: var(--fontCaslon);
+    color: var(--corTexto);
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+
+.titulo p{
+    font-family: var(--fontHanken);
+    color: #765F52;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+/* ---------------- FORMULARIO ---------------- */
+
+form{
+    width: 100%;
+}
+
+
+.inputs_form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.form_coluna1{
+    width: 65%;
+}
+
+
+.linha_form{
+    margin-bottom: 25px;
+}
+
+
+.lf_coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lf_linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ---------------- LABEL ---------------- */
+
+form label{
+    font-family: var(--fontHanken);
+    color: var(--corTexto);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+/* ---------------- INPUT ---------------- */
+
+form input[type=text],
+form textarea{
+    background-color: transparent;
+    border: solid 1px #CFC5B5;
+    padding: 12px;
+    font-family: var(--fontHanken);
+    font-size: 15px;
+    width: 100%;
+}
+
+
+form input[type=text]:focus,
+form textarea:focus{
+    outline: none;
+}
+
+
+form textarea{
+    resize: none;
+}
+
+
+/* ---------------- PREÇO E CATEGORIA ---------------- */
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+
+/* ---------------- IMAGEM ---------------- */
+
+form input[type=file]{
+    font-family: var(--fontHanken);
+    color: #765F52;
+}
+
+
+/* ---------------- BOTÃO ---------------- */
+
+form input[type=button]{
+
+    background-color: var(--corVerde);
+
+    color: #FFFFFF;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    font-family: var(--fontHanken);
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    border-radius: 35px;
+}
+
+
+/* ---------------- PREVIEW ---------------- */
+
+.preview{
+    width: 30%;
+}
+
+
+.imagem_preview{
+
+    height: 400px;
+
+    border: solid 1px #CFC5B5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.imagem_preview span{
+
+    font-family: var(--fontCaslon);
+
+    font-size: 35px;
+
+    color: var(--corDourado);
+
+    margin-bottom: 20px;
+}
+
+
+.imagem_preview p{
+
+    font-family: var(--fontHanken);
+
+    color: #765F52;
+
+    font-size: 15px;
+
+    width: 180px;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    background-color: var(--corTexto);
+
+    height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.footer_container{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.footer_container span{
+
+    color: #FFF8ED;
+
+    font-family: var(--fontHanken);
+
+    font-size: 13px;
+}
+
+
+.nav_footer{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 150px;
+}
+
+
+.nav_footer a{
+
+    color: #FFF8ED;
+
+    text-decoration: none;
+
+    font-family: var(--fontHanken);
+
+    font-size: 13px;
+}
+
+
+/* ---------------- CELULAR ---------------- */
+
+@media screen and (max-width:768px){
+
+    .cad_container{
+        padding: 50px 0;
+    }
+
+
+    .titulo h1{
+        font-size: 36px;
+    }
+
+
+    .titulo p{
+        font-size: 15px;
+    }
+
+
+    .inputs_form{
+        flex-direction: column;
+    }
+
+
+    .form_coluna1{
+        width: 100%;
+    }
+
+
+    .lf_linha{
+        flex-direction: column;
+    }
+
+
+    .campo{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    .preview{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .imagem_preview{
+        height: 250px;
+    }
+
+
+    .footer_container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

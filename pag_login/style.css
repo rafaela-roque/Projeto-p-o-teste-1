@@ -1,0 +1,246 @@
+:root {
+    --texto: #2b1a12;
+    --texto-suave: #8a6854;
+    --marrom: #6b4530;
+    --creme: #f5f0e5;
+    --creme-card: #fdfae1;
+    --borda: #dfd3b6;
+    --dourado: #b77d4d;
+    --verde: #4f5e30;
+    --verde-hover: #435029;
+
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Outfit', Arial, sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 5%;
+    background-color: #4c2318;
+}
+
+.container_cabecalho{
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.logo svg{
+    width: 46px;
+    height: 46px;
+}
+
+.logo-texto small{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #cdb8a3;
+}
+
+.voltar{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color:#e6d9c3;
+    text-decoration: none;
+}
+
+/* LOGIN */
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+}
+.base_login {
+    font-family: var(--sans);
+    background-color: var(--creme);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.marca{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.marca span{
+    display: block;
+    width: 53px;
+    height: 3px;
+    background-color: var(--dourado);
+}
+
+.marca h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--creme-card);
+    border: 1px solid var(--borda);
+    border-radius: 17px;
+    padding: 36px;
+}
+
+.card h2{
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.campo{
+    margin-bottom: 18px;
+}
+
+.campo label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.campo input{
+    width: 100%;
+    height: 50px;
+    padding: 0 18px;
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--texto);
+    background-color: #fff;
+    border: 1px solid var(--borda);
+}
+
+.camp input::placeholder{
+    color: #b8a592;
+}
+
+.campo input:focus{
+    border-color: var(--verde);
+}
+
+.esqueci{
+    text-align: right;
+    margin: -4 0 24px;
+    font-size: 14px;
+}
+
+.esqueci a,
+.cadastro a{
+    color: var(--marrom);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--dourado);
+}
+
+
+.botao{
+    width: 100%;
+    height: 54px;
+    border: none;
+    background-color: var(--verde);
+    color: var(--creme);
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.cadastro{
+    margin-top: 22px;
+    font-size: 15px;
+    color: var(--texto-suave);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 28px 22px;
+    }
+
+    .marca h1 {
+        font-size: 26px;
+    }
+}
+
+.contato{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 26px;
+    padding-top: 20px;
+    border-top: 1px solid var(--borda);
+    text-align: center;
+}
+
+.contato p{
+    font-size: 14px;
+    color: var(--texto-suave);
+    margin-bottom: 14px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.redes a{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px var(--borda);
+    background-color: var(--creme-card);
+    color: var(--marrom);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* CELULAR */
+@media (max-width: 480px) {
+    .logo-texto small {
+        display: none;
+    }
+
+    .logo-texto strong {
+        font-size: 16px;
+    }
+
+    .voltar {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #f5f0e5;
+    color: #2b1a12;
+}
+
+.Depoimentos {
+    padding: 70px 8%;
+}
+
+/* TÍTULO */
+
+.titulo {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.titulo span{
+    width: 53px;
+    height: 3px;
+    background-color:#b77d4d ;
+    display: block;
+    margin-top: 22px;
+    flex-shrink: 0;
+}
+.titulo h2{
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+.titulo p{
+    color: #8a6854;
+    font-size: 20px;
+    font-family: "Hanken Grotesk", serif;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card {
+    background:  #FDFAE1;
+    border: 1px solid #dfd3b6;
+    border-radius: 17px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.Estrelas {
+    color: #B8875C;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.Depoimentos{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} 
+
+/* CLIENTES */
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+.Avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #6B4429;
+    color: #e8d8c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.cliente strong{
+    font-size: 14px;
+}
+
+.cliente p{
+    color: #a27c63;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* CELULAR */
+@media (max-width: 640px) {
+    .Depoimentos{
+        padding: 40px 5%;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+.titulo {
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.titulo span {
+    width: 32px;
+    margin-top: 18px;
+}
+
+.titulo h2{
+    font-size: 28px;
+}
+
+.titulo p {
+    font-size: 15px;
+}
+
+
+.card:last-child{
+    grid-column: auto;
+}
+
+.card{
+    padding: 24px 22px;
+    height: auto;
+}
+
+.card h3{
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 18px;
+}
